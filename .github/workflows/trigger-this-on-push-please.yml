@@ -6,12 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
+      - name: Get Code
         uses: actions/checkout@v3
       - name: Install deps
         run: yarn
       - name: Build
         run: yarn run build
-      - name: Test
+      - name: Lint
         run: yarn run lint
-      - run: echo "Done!"
+      - run: echo "${{toJson(github)}}"
