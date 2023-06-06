@@ -4,7 +4,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
   root: true,
   extends: [
-    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
     "eslint:recommended",
     "@vue/eslint-config-typescript",
     "@vue/eslint-config-prettier/skip-formatting",
@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "prettier/prettier": ["error"],
     "prefer-const": "error",
+    "no-var": "error",
     "no-console": "error",
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
